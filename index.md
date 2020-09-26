@@ -5,8 +5,12 @@
 ### Play Store Apps 
 
 [Ruqyah for Evil Eye]
-https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye
 
+<h1>Ruqyah for Evil Eye</h1>
+
+<a href="https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye" target="_blank">Ruqyah for Evil Eye</a> 
+
+<p>If you set the target attribute to "_blank", the link will open in a new browser window or a new tab.</p>
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
