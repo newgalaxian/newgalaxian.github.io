@@ -4,14 +4,8 @@
 
 ### Play Store Apps 
 
-[Ruqyah for Evil Eye]
-
 <a href="https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye" target="_blank">Ruqyah for Evil Eye</a> 
 <img src="images/ruqyah_200.png?raw=true"/>
-
----
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="https://lh3.googleusercontent.com/txK6qwAW-cq-7ebBJQL9NxxwETh4nBgpF1JNpnsDcB2r6ZORqRQBBA1D58r0ysmOThs=s180-rw"/>
 
 ---
 [Project 3 Title](http://example.com/)
