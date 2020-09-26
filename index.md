@@ -4,14 +4,17 @@
 
 ### Play Store Apps 
 
-<a href="https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye" target="_blank">Ruqyah for Evil Eye</a> 
+<a href="https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye" target="_blank">Ruqyah for Evil Eye</a> <br>
 <img src="images/ruqyah_200.png?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/ruqyah_200.png?raw=true"/>
+[Healthy Body Tips and Exercises | Workout
+
+<a href="https://play.google.com/store/apps/details?id=com.arham.soft.healthybodytips" target="_blank">Ruqyah for Evil Eye</a> <br>
+<img src="images/health_200.png?raw=true"/>
 
 ---
+
 
 ### Category Name 2
 
