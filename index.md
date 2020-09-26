@@ -2,7 +2,9 @@
 
 ---
 Android Developer having experience of building mobile applications with Java.
-Now exploring Flutter for cross platform
+Now exploring Flutter for cross-platform.
+
+Applications which are on play store are :-
 
 ### Play Store Apps 
 
@@ -22,11 +24,8 @@ Now exploring Flutter for cross platform
 
 ### Experience
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+- []()
+
 
 ---
 
