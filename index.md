@@ -2,10 +2,10 @@
 
 ---
 
-### Category Name 1 
+### Play Store Apps 
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Ruqyah for Evil Eye]
+https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
