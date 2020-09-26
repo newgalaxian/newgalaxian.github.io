@@ -24,8 +24,9 @@ Applications which are on play store are :-
 
 ### Experience
 
-- [RamsAndroid](Internship for 6 months (2017) )
-- [SEARCH NOW INDIA](Jonior Developer f (2018) )
+- [SEARCH NOW INDIA,Bangalore](Jonior Developer  (2018) )
+- [RamsAndroid,Hyderabad](Internship for 6 months (2017) )
+
 
 
 ---
