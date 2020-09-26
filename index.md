@@ -12,7 +12,7 @@
 ---
 [Healthy Body Tips and Exercises | Workout]
 
-<a href="https://play.google.com/store/apps/details?id=com.arham.soft.healthybodytips" target="_blank">Ruqyah for Evil Eye</a> <br>
+<a href="https://play.google.com/store/apps/details?id=com.arham.soft.healthybodytips" target="_blank">Healthy Body Tips and Exercises | Workout</a> <br>
 <img src="images/health_200.png?raw=true"/>
 
 ---
