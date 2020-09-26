@@ -1,6 +1,8 @@
 ## Portfolio
 
 ---
+Android Developer having experience of building mobile applications with Java.
+Now exploring Flutter for cross platform
 
 ### Play Store Apps 
 
@@ -18,7 +20,7 @@
 ---
 
 
-### Category Name 2
+### Experience
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)
