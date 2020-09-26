@@ -4,11 +4,13 @@
 
 ### Play Store Apps 
 
+[Ruqyah for Evil Eye]
+
 <a href="https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye" target="_blank">Ruqyah for Evil Eye</a> <br>
 <img src="images/ruqyah_200.png?raw=true"/>
 
 ---
-[Healthy Body Tips and Exercises | Workout
+[Healthy Body Tips and Exercises | Workout]
 
 <a href="https://play.google.com/store/apps/details?id=com.arham.soft.healthybodytips" target="_blank">Ruqyah for Evil Eye</a> <br>
 <img src="images/health_200.png?raw=true"/>
