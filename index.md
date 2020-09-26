@@ -6,7 +6,7 @@
 
 [Ruqyah for Evil Eye]
 
-<a href="https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye" target="_blank">Ruqyah for Evil Eye</a> <br>
+<a href="https://play.google.com/store/apps/details?id=com.arham.soft.ruqyahforevileye" target="_blank">Ruqyah for Evil Eye</a> <br><br><br>
 <img src="images/ruqyah_200.png?raw=true"/>
 
 ---
