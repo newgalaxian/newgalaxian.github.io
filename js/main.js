@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $(function() {
         element.typed({
-           strings: ["Android Developer.", "Designer.", "Freelancer."],
+           strings: ["Android Developer.","Flutter Developer.","Wordpress Developer", "Designer.", "Freelancer."],
            loop: true,
            typeSpeed: 90
        });
