@@ -120,87 +120,103 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'r3hrs',
     tagline:
-      'Migrated R3’s hair-recovery product site from WordPress to a fast, modern Next.js build.',
+      'Migrated R3’s slow WordPress site to Next.js, improving Core Web Vitals and SEO along the way.',
     overview:
       'R3 needed its WordPress-based product site for a peptide-based hair follicle recovery spray rebuilt on modern infrastructure — faster, easier to maintain, and ready to scale content like the Science and Blog sections.',
     problem: [
-      'The existing WordPress site was slower and harder to extend than the brand needed.',
+      'The existing WordPress site was slow, with weak Core Web Vitals hurting both user experience and search rankings.',
       'Content across Science, Products, and Blog sections needed a more maintainable structure.',
+      'The site needed stronger technical and on-page SEO to support organic search.',
     ],
     solution: [
       'Rebuilt the site from WordPress to Next.js, preserving the existing content and product pages.',
-      'Restructured the Science, Products, and Blog sections for faster loads and easier updates.',
-      'Optimised the site for search visibility around the brand’s key actives (Redensyl®, AnaGain™, Baicapil™).',
+      'Improved Core Web Vitals (LCP, CLS, INP) through image optimisation, code splitting, and a leaner front-end.',
+      'Implemented technical and on-page SEO to strengthen search visibility around the brand’s key actives (Redensyl®, AnaGain™, Baicapil™).',
     ],
     challenges: [
       'Migrating existing WordPress content and URLs without losing SEO equity.',
       'Matching the clinical, dermatologist-tested tone of the brand in a rebuilt front-end.',
     ],
     results: [
-      'A faster, modern Next.js site live at r3hrs.com.',
+      'A faster, modern Next.js site live at r3hrs.com with meaningfully improved Core Web Vitals.',
+      'A stronger technical and on-page SEO foundation for organic search.',
       'A more maintainable content structure for ongoing Science and Blog updates.',
     ],
   },
   {
     slug: 'ceovia',
-    tagline: 'Rebuilt Ceovia’s 90-day wellness system site from WordPress to Next.js.',
+    tagline:
+      'Rebuilt Ceovia’s slow WordPress site as a fast Next.js build, improving Core Web Vitals and SEO.',
     overview:
       'Ceovia’s clinically structured wellness system, built around Himalayan Sea Buckthorn bioactives, needed its WordPress site rebuilt for performance and a premium, editorial feel befitting a daily wellness product.',
     problem: [
-      'The WordPress site needed a faster, more premium front-end to match the brand’s clinical positioning.',
+      'The WordPress site was slow, with weak Core Web Vitals that undercut its premium, clinical positioning.',
       'Science, Products, and Clinical Insight content needed a cleaner structure.',
+      'The site needed stronger technical SEO to support its core ingredient story.',
     ],
     solution: [
       'Rebuilt the site from WordPress to Next.js with a premium, editorial layout.',
-      'Restructured the Science, Products, Blog, and Clinical Insight sections for clarity and speed.',
-      'Optimised the site for search around the brand’s core ingredient story.',
+      'Improved Core Web Vitals through image optimisation, code splitting, and a leaner, faster front-end.',
+      'Implemented technical and on-page SEO around the brand’s Himalayan Sea Buckthorn ingredient story.',
     ],
     challenges: [
       'Preserving a premium, clinical tone through the rebuild.',
       'Migrating existing content without losing SEO equity.',
     ],
-    results: ['A faster, premium Next.js site live at ceovia.com.'],
+    results: [
+      'A faster, premium Next.js site live at ceovia.com with improved Core Web Vitals.',
+      'A stronger technical SEO foundation for the brand’s core ingredient content.',
+    ],
   },
   {
     slug: 'skinin',
     tagline:
-      'Migrated Skinin’s professional micro-needling device site from WordPress to Next.js.',
+      'Migrated Skinin’s slow WordPress site to Next.js, improving Core Web Vitals and SEO for a professional audience.',
     overview:
       'Skinin, an advanced professional micro-needling system by AK Pharma, needed its WordPress site rebuilt to better present its technology, treatment protocol, and professional resources to clinics.',
     problem: [
-      'The WordPress site needed to be faster and easier to maintain across Products, Technology, and Resources.',
+      'The WordPress site was slow, with weak Core Web Vitals undercutting its clinical, professional positioning.',
       'Professional and clinical audiences needed clear technology and treatment-protocol information.',
+      'The site needed stronger technical SEO to reach a specialist, professional audience.',
     ],
     solution: [
       'Rebuilt the site from WordPress to Next.js, covering Products, Technology, Treatment Protocol, and Resources.',
-      'Structured the content for professional buyers evaluating a clinical device.',
-      'Optimised the site for search and page speed.',
+      'Improved Core Web Vitals and page speed through a leaner, optimised Next.js front-end.',
+      'Implemented technical and on-page SEO to strengthen visibility for a specialist, professional audience.',
     ],
     challenges: [
       'Presenting technical, clinical information (depth control, sterilization, channel rate) clearly for professional buyers.',
       'Migrating existing WordPress content without losing SEO equity.',
     ],
-    results: ['A faster, professional Next.js site live at skinin.org.'],
+    results: [
+      'A faster, professional Next.js site live at skinin.org with meaningfully improved Core Web Vitals.',
+      'A stronger technical SEO foundation for a specialist, professional audience.',
+    ],
   },
   {
     slug: 'prizmah',
-    tagline: 'Rebuilt Prizmah’s PRP/PRF medical device site from WordPress to Next.js.',
+    tagline:
+      'Rebuilt Prizmah’s slow WordPress site as a fast Next.js build, improving Core Web Vitals and SEO.',
     overview:
       'Prizmah, a proprietary autologous Platelet-Rich Plasma system used across aesthetic, orthopedic, wound, and dental care, needed its WordPress site rebuilt to better present its technology, applications, and compliance credentials.',
     problem: [
-      'The WordPress site needed to be faster and better structured across Technology, Applications, and Resources.',
+      'The WordPress site was slow, with weak Core Web Vitals undercutting a credibility-critical medical device brand.',
       'Compliance credentials (cGMP, EN ISO 13485, ISO 9001) needed clear, credible presentation.',
+      'The site needed stronger technical SEO across several distinct clinical use cases.',
     ],
     solution: [
       'Rebuilt the site from WordPress to Next.js, covering Technology, Applications, Resources, and compliance information.',
-      'Structured content for clinical and professional buyers across multiple use cases.',
-      'Optimised the site for search and page speed.',
+      'Improved Core Web Vitals and page speed through a leaner, optimised Next.js front-end.',
+      'Implemented technical and on-page SEO across aesthetic, orthopedic, wound, and dental use cases.',
     ],
     challenges: [
       'Communicating a medical device’s technology and compliance credentials clearly to a professional audience.',
       'Migrating existing WordPress content without losing SEO equity.',
     ],
-    results: ['A faster, professional Next.js site live at prizmah.com.'],
+    results: [
+      'A faster, professional Next.js site live at prizmah.com with meaningfully improved Core Web Vitals.',
+      'A stronger technical SEO foundation across multiple clinical use cases.',
+    ],
   },
   {
     slug: 'alameerali',
@@ -228,24 +244,27 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'techsavvyhelp',
     tagline:
-      'A WordPress content site publishing Windows tips and troubleshooting guides — built and written by Anwar.',
+      'A fast, SEO-optimised WordPress content site publishing Windows guides — built and written by Anwar.',
     overview:
-      'TechSavvyHelp needed a fast, well-organised WordPress site to publish practical Windows troubleshooting guides, how-tos, and tech insights, with Anwar building the site and authoring its content.',
+      'TechSavvyHelp needed a fast, well-organised WordPress site to publish practical Windows troubleshooting guides, how-tos, and tech insights, with Anwar building the site, tuning it for speed and Core Web Vitals, and authoring its content.',
     problem: [
+      'A slow WordPress setup hurts both readers and search rankings — page speed and Core Web Vitals needed to be genuinely fast, not just adequate.',
       'Readers need clear, practical troubleshooting guides organised by topic.',
-      'The site needed a fast, well-structured WordPress setup with good on-page SEO.',
+      'The site needed strong technical and on-page SEO to compete for high-intent troubleshooting searches.',
     ],
     solution: [
       'Built the site on WordPress with Elementor, organised into Windows, How To, Security, Software, Mobile, and Troubleshooter sections.',
-      'Write and publish the site’s troubleshooting guides and how-to articles.',
-      'Optimised each article for search intent and readability.',
+      'Optimised the WordPress stack for speed and Core Web Vitals — image compression, caching, and a lean Elementor setup.',
+      'Write and publish the site’s troubleshooting guides, each optimised for search intent and on-page SEO.',
     ],
     challenges: [
+      'Keeping Core Web Vitals strong on WordPress + Elementor, a stack that easily gets slow without careful optimisation.',
       'Structuring a large, growing library of guides for easy discovery.',
       'Keeping technical content accurate and genuinely useful, not generic filler.',
     ],
     results: [
-      'A live content site at techsavvyhelp.com with a growing library of Windows guides.',
+      'A fast-loading WordPress site at techsavvyhelp.com with strong Core Web Vitals.',
+      'A growing, SEO-optimised library of Windows guides built for organic search.',
     ],
   },
   {
