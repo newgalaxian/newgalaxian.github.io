@@ -91,6 +91,36 @@ export const PROJECTS: Project[] = [
     image: '/projects/prizmah.jpg',
   },
   {
+    slug: 'alameerali',
+    title: 'AmeerAli — Luxury Gifting',
+    description:
+      'Built a Next.js e-commerce site for AmeerAli, a luxury personalized gifting brand — custom bags, premium perfumes, and corporate gifting, serving both retail and wholesale buyers with worldwide delivery.',
+    tech: ['Next.js', 'E-commerce', 'SEO'],
+    category: 'E-commerce',
+    liveUrl: 'https://alameerali.com',
+    image: '/projects/alameerali.jpg',
+  },
+  {
+    slug: 'techsavvyhelp',
+    title: 'TechSavvyHelp',
+    description:
+      'Built and write for TechSavvyHelp, a WordPress site publishing Windows tips, fixes, and step-by-step troubleshooting guides — covering security, software, and mobile topics.',
+    tech: ['WordPress', 'Elementor', 'Content Writing'],
+    category: 'Web',
+    liveUrl: 'https://techsavvyhelp.com',
+    image: '/projects/techsavvyhelp.jpg',
+  },
+  {
+    slug: 'mesoage',
+    title: 'MesoAge — Mesotherapy Products',
+    description:
+      'Built a Next.js site for MesoAge, an aesthetic mesotherapy product line for professional practitioners and clinics — covering treatments, ingredients, and equipment.',
+    tech: ['Next.js', 'SEO'],
+    category: 'Web',
+    liveUrl: 'https://mesoage.com',
+    image: '/projects/mesoage.jpg',
+  },
+  {
     slug: 'google-play-apps',
     title: 'Google Play Apps',
     description:

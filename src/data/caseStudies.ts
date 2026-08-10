@@ -203,6 +203,72 @@ export const CASE_STUDIES: CaseStudy[] = [
     results: ['A faster, professional Next.js site live at prizmah.com.'],
   },
   {
+    slug: 'alameerali',
+    tagline:
+      'A Next.js e-commerce build for a luxury personalized gifting and corporate gifting brand.',
+    overview:
+      'AmeerAli needed a premium e-commerce presence for its luxury personalized gifts, perfumes, and corporate gifting line — built to serve both retail and wholesale customers with worldwide delivery.',
+    problem: [
+      'The brand needed a luxury-grade storefront that matched its premium positioning.',
+      'Retail customers and wholesale/corporate buyers needed distinct, clear paths through the site.',
+    ],
+    solution: [
+      'Built the storefront in Next.js for a fast, polished shopping experience.',
+      'Structured separate Shop and Wholesale sections to serve both retail and corporate buyers.',
+      'Optimised the site for search and page speed.',
+    ],
+    challenges: [
+      'Balancing a rich, editorial luxury aesthetic with fast page loads.',
+      'Supporting both individual retail orders and wholesale inquiries on one platform.',
+    ],
+    results: [
+      'A premium Next.js storefront live at alameerali.com serving retail and wholesale customers worldwide.',
+    ],
+  },
+  {
+    slug: 'techsavvyhelp',
+    tagline:
+      'A WordPress content site publishing Windows tips and troubleshooting guides — built and written by Anwar.',
+    overview:
+      'TechSavvyHelp needed a fast, well-organised WordPress site to publish practical Windows troubleshooting guides, how-tos, and tech insights, with Anwar building the site and authoring its content.',
+    problem: [
+      'Readers need clear, practical troubleshooting guides organised by topic.',
+      'The site needed a fast, well-structured WordPress setup with good on-page SEO.',
+    ],
+    solution: [
+      'Built the site on WordPress with Elementor, organised into Windows, How To, Security, Software, Mobile, and Troubleshooter sections.',
+      'Write and publish the site’s troubleshooting guides and how-to articles.',
+      'Optimised each article for search intent and readability.',
+    ],
+    challenges: [
+      'Structuring a large, growing library of guides for easy discovery.',
+      'Keeping technical content accurate and genuinely useful, not generic filler.',
+    ],
+    results: [
+      'A live content site at techsavvyhelp.com with a growing library of Windows guides.',
+    ],
+  },
+  {
+    slug: 'mesoage',
+    tagline: 'A Next.js site for a professional aesthetic mesotherapy product line.',
+    overview:
+      'MesoAge, a mesotherapy product line for aesthetic practitioners and clinics, needed a site that clearly presents its treatments, ingredients, and equipment to a professional buyer audience.',
+    problem: [
+      'Professional practitioners needed clear information on treatments, ingredients, and equipment before buying.',
+      'The brand needed a site that read as credible and clinical, not consumer-facing.',
+    ],
+    solution: [
+      'Built the site in Next.js, covering Treatments, Ingredients, Equipment, and Resources.',
+      'Structured content for a professional, practitioner audience evaluating the product line.',
+      'Optimised the site for search and page speed.',
+    ],
+    challenges: [
+      'Presenting a wide product range (facial, body, hair, pigmentation) clearly without overwhelming visitors.',
+      'Maintaining a credible, clinical tone throughout.',
+    ],
+    results: ['A professional Next.js site live at mesoage.com for practitioners and clinics.'],
+  },
+  {
     slug: 'google-play-apps',
     tagline:
       'Published Android and Flutter apps — including Islamic utility apps for a global audience.',

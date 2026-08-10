@@ -51,6 +51,21 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://iamanwaralam.github.io/projects/alameerali</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iamanwaralam.github.io/projects/techsavvyhelp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://iamanwaralam.github.io/projects/mesoage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://iamanwaralam.github.io/projects/google-play-apps</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
