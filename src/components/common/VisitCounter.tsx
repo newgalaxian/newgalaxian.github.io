@@ -1,31 +1,32 @@
-import { useEffect, useState } from 'react';
-import { Eye } from 'lucide-react';
-import { recordVisit } from '@/utils';
+import { useState } from 'react';
+
+const PAGE_ID = 'iamanwaralam-portfolio-site';
+const BADGE_SRC = `https://visitor-badge.laobi.icu/badge?page_id=${PAGE_ID}&left_text=Visited&left_color=0f172a&right_color=2563eb`;
 
 /**
- * Sitewide "opened N times" counter, shown quietly in the footer. Renders
- * nothing until (and unless) the count resolves — no loading flash, no
- * broken state visible if the counting service is ever unreachable.
+ * Sitewide "opened N times" counter, shown quietly in the footer, via
+ * visitor-badge.laobi.icu — a purpose-built, no-signup hit-counter image
+ * service with a long track record (widely embedded across GitHub profile
+ * READMEs for years). Plain <img>, so there's no fetch/CORS failure mode;
+ * hides itself entirely if the image ever fails to load.
+ *
+ * Chose this over JSON-based counter APIs after two in a row went dead
+ * within this project's lifetime (countapi.xyz stopped resolving;
+ * counterapi.dev deprecated its v1 API weeks after integration) — an image
+ * badge from a service built specifically for this use case is the more
+ * durable bet.
  */
 export function VisitCounter() {
-  const [count, setCount] = useState<number | null>(null);
+  const [failed, setFailed] = useState(false);
 
-  useEffect(() => {
-    let cancelled = false;
-    recordVisit().then((value) => {
-      if (!cancelled) setCount(value);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  if (count === null) return null;
+  if (failed) return null;
 
   return (
-    <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
-      <Eye className="size-3.5" aria-hidden="true" />
-      Visited {count.toLocaleString()} times
-    </span>
+    <img
+      src={BADGE_SRC}
+      alt="Visitor count"
+      className="h-5 rounded"
+      onError={() => setFailed(true)}
+    />
   );
 }

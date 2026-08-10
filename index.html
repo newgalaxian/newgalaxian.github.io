@@ -8,37 +8,33 @@
     <meta name="theme-color" content="#020617" />
 
     <!--
-      Static fallback meta — the source of truth for what non-JS crawlers
-      and link-preview bots (WhatsApp, X/Twitter, some LinkedIn fetches) see,
-      since this is a client-rendered SPA with no server-side rendering.
-      Every route's <SEO> component (src/components/common/SEO.tsx) overrides
-      these via React 19's native metadata hoisting once JS runs — which is
-      what JS-executing crawlers like Googlebot index. Keep these in sync
-      with src/data/site.ts (SITE) so the un-hydrated fallback is never bare.
-    -->
-    <title>Anwar Alam — Full Stack Web Developer in Dubai, UAE</title>
-    <meta
-      name="description"
-      content="Anwar Alam is a Full Stack Web Developer, Shopify & WordPress expert, and SEO specialist based in Dubai, UAE. Available for remote, hybrid, onsite, and freelance work."
-    />
-    <link rel="canonical" href="https://iamanwaralam.github.io/" />
+      Minimal static fallback — ONLY page-invariant tags (same on every
+      route), so there is never a duplicate with conflicting content once
+      React mounts. Page-specific tags (title, description, canonical,
+      og:title/description/url, twitter:title/description) are NOT
+      duplicated here — they come solely from each route's <SEO> component
+      (src/components/common/SEO.tsx) via React 19's native metadata
+      hoisting.
 
+      Why not duplicate those too "for non-JS bots": React does NOT remove
+      or replace tags that were already in the static HTML — it only
+      manages tags it renders itself. A static <title>/<link rel=canonical>
+      here previously left TWO of each in the DOM on every route (verified
+      via a live audit), always describing the homepage regardless of which
+      page was open. Google explicitly warns that duplicate/conflicting
+      canonical tags cause it to "make an unpredictable choice" — this was
+      actively risking non-indexation of every case study and the blog
+      page. Removing the page-varying static tags trades "non-JS bots get a
+      slightly wrong preview on sub-pages" (the prior, worse state) for
+      "non-JS bots get no preview on sub-pages, but JS-executing crawlers
+      — which is effectively all of Google, Bing, and every major AI
+      crawler today — see fully correct, page-specific, non-conflicting
+      tags everywhere."
+    -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Anwar Alam" />
-    <meta property="og:title" content="Anwar Alam — Full Stack Web Developer in Dubai, UAE" />
-    <meta
-      property="og:description"
-      content="Anwar Alam is a Full Stack Web Developer, Shopify & WordPress expert, and SEO specialist based in Dubai, UAE. Available for remote, hybrid, onsite, and freelance work."
-    />
-    <meta property="og:url" content="https://iamanwaralam.github.io/" />
     <meta property="og:image" content="https://iamanwaralam.github.io/og/og-image.jpg" />
-
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Anwar Alam — Full Stack Web Developer in Dubai, UAE" />
-    <meta
-      name="twitter:description"
-      content="Anwar Alam is a Full Stack Web Developer, Shopify & WordPress expert, and SEO specialist based in Dubai, UAE. Available for remote, hybrid, onsite, and freelance work."
-    />
     <meta name="twitter:image" content="https://iamanwaralam.github.io/og/og-image.jpg" />
     <meta name="twitter:creator" content="@iamanwaralam" />
 

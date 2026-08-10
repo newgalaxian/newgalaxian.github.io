@@ -39,3 +39,8 @@ pnpm-debug.log*
 
 # Source assets (originals kept local; only optimized exports ship from public/)
 assets-source/
+
+# Claude Code local tooling (skills, agent config) — not portfolio content,
+# stays out of the public repo.
+.claude/
+skills-lock.json
