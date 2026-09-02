@@ -91,6 +91,16 @@ export const PROJECTS: Project[] = [
     image: '/projects/prizmah.jpg',
   },
   {
+    slug: 'lapromed',
+    title: 'Lapromed — Liposuction Cannulas',
+    description:
+      'Rebuilt Lapromed’s surgical cannula and accessories site from WordPress to Next.js — covering its full liposuction cannula and hub-connection range, cleaning & care guidance, and resources for surgeons and clinics.',
+    tech: ['Next.js', 'WordPress Migration', 'SEO'],
+    category: 'Web',
+    liveUrl: 'https://lapromed.com',
+    image: '/projects/lapromed.jpg',
+  },
+  {
     slug: 'alameerali',
     title: 'AmeerAli — Luxury Gifting',
     description:

@@ -51,6 +51,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://iamanwaralam.github.io/projects/lapromed</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://iamanwaralam.github.io/projects/alameerali</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -219,6 +219,32 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
   },
   {
+    slug: 'lapromed',
+    tagline:
+      'Rebuilt Lapromed’s slow WordPress site as a fast Next.js build, improving Core Web Vitals and SEO.',
+    overview:
+      'Lapromed manufactures precision liposuction cannulas, hub-connection systems, and fat-transfer instruments for surgeons, clinics, and hospitals. Its WordPress site needed rebuilding to present a large, technical product range clearly to a professional medical audience.',
+    problem: [
+      'The WordPress site was slow, with weak Core Web Vitals undercutting a precision medical-device brand.',
+      'Five cannula families across six interchangeable hub styles needed clear, browsable organisation.',
+      'Cleaning & care guidance and technical resources needed a credible, easy-to-find home for clinical buyers.',
+    ],
+    solution: [
+      'Rebuilt the site from WordPress to Next.js, covering Products, Cleaning & Care, and Resources.',
+      'Structured the product catalogue by cannula type, with accessories and hub-connection systems browsable separately.',
+      'Improved Core Web Vitals and page speed through a leaner, optimised Next.js front-end.',
+      'Implemented technical and on-page SEO for a specialist surgical-device audience.',
+    ],
+    challenges: [
+      'Organising a large, technical catalogue (five cannula families, six hub styles, accessories) for fast browsing.',
+      'Migrating existing WordPress content without losing SEO equity.',
+    ],
+    results: [
+      'A faster, professional Next.js site live at lapromed.com with a 98/100 mobile Lighthouse performance score, a 2.1s LCP, and zero layout shift (tested Sep 2026).',
+      'A clearly organised product catalogue for surgeons, clinics, and hospitals.',
+    ],
+  },
+  {
     slug: 'alameerali',
     tagline:
       'A Next.js e-commerce build for a luxury personalized gifting and corporate gifting brand.',

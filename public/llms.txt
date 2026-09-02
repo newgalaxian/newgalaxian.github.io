@@ -21,6 +21,7 @@ Anwar Alam rebuilds corporate and product sites as fast, modern Next.js applicat
 - [Ceovia — Wellness System](https://iamanwaralam.github.io/projects/ceovia): Migrated a wellness supplement brand site from WordPress to Next.js.
 - [Skinin — Micro-Needling System](https://iamanwaralam.github.io/projects/skinin): Migrated a professional medical-device brand site from WordPress to Next.js.
 - [Prizmah — PRP System](https://iamanwaralam.github.io/projects/prizmah): Migrated a medical-device (PRP/PRF) brand site from WordPress to Next.js.
+- [Lapromed — Liposuction Cannulas](https://iamanwaralam.github.io/projects/lapromed): Migrated a surgical cannula and accessories manufacturer's site from WordPress to Next.js.
 - [AmeerAli — Luxury Gifting](https://iamanwaralam.github.io/projects/alameerali): Next.js e-commerce site for a luxury personalized gifting and corporate gifting brand, serving retail and wholesale buyers.
 - [TechSavvyHelp](https://iamanwaralam.github.io/projects/techsavvyhelp): Independent project — WordPress site publishing Windows tips and troubleshooting guides, with Anwar owning site build, keyword research, SEO, and content end-to-end.
 - [MesoAge — Mesotherapy Products](https://iamanwaralam.github.io/projects/mesoage): Next.js site for a professional aesthetic mesotherapy product line, for practitioners and clinics.
