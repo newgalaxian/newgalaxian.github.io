@@ -83,7 +83,7 @@ export function Footer() {
               Services
             </h3>
             <ul className="mt-4 flex flex-col gap-2.5">
-              {SERVICES.slice(0, 6).map((service) => (
+              {SERVICES.map((service) => (
                 <li key={service.slug}>
                   <FooterLink href="#services" label={service.title} />
                 </li>

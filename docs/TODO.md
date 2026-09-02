@@ -1,13 +1,12 @@
 # TODO — Content & Assets Needed From Anwar
 
 Most content is now verified from the official CV
-(`public/resume/Anwar_Alam_CV_OnePage.pdf`). Remaining items below.
+(`public/resume/Anwar_Alam_CV.pdf`). Remaining items below.
 
 ## Assets
-- [x] **Hero photo** — professional headshots uploaded to `public/profile/`;
-      `2.png` (dev-workspace look) optimized to `anwar-hero.jpg` (54 kB) and
-      wired into the hero. Alternates 1/3/4.png remain — swap `PHOTO_SRC` in
-      `src/sections/hero/HeroPhoto.tsx` to change.
+- [x] **Hero photo** — removed by request; the hero is now a text-only,
+      single-column layout (no `HeroPhoto.tsx`). Source photos remain in
+      `public/profile/` if a portrait is wanted back later.
 - [x] **Project screenshots** — all 12 web/e-commerce projects done (akiuae,
       esthica, beatryx, flavor-and-figures, r3hrs, ceovia, skinin, prizmah,
       alameerali, techsavvyhelp, mesoage) captured from the live sites,
@@ -22,8 +21,10 @@ Most content is now verified from the official CV
 ## Content to confirm
 - [x] Live URLs for Beatryx (beatryx.com) and Flavor & Figures
       (flavorandfigures.com) — added, live button + screenshot both wired.
-- [ ] **Certification details** — issuer + year for Android Developer,
-      Flutter Developer, Digital Marketing & SEO (`src/data/certifications.ts`).
+- [x] Certification issuers — all three (Android Developer, Flutter
+      Developer, Digital Marketing & SEO) confirmed as Udemy
+      (`src/data/certifications.ts`).
+- [ ] Certification years — still unconfirmed for all three.
 - [x] Testimonials — 3 real client quotes added (Esthica, AK International,
       Flavor & Figures). Optional: client logos/avatars →
       `public/testimonials/<name>.jpg`.
@@ -36,14 +37,14 @@ Most content is now verified from the official CV
       `index.html`, `robots.txt`, `sitemap.xml`.
 
 ## Verified & wired from the CV (no action needed)
-- [x] 8+ years experience (4 in the UAE); full work history with real dates:
+- [x] Full work history with real dates, no exact-duration headline figures:
       AK International (2022–present), Independent e-commerce (2023–present),
       ArhamTechMind (2020–2022), csdevbin (2017–2019).
 - [x] Education: M.Tech (JNTU Hyderabad), B.E. (Osmania University).
 - [x] Languages: English, Hindi/Urdu, Nepali.
 - [x] Certifications (titles): Android, Flutter, Digital Marketing & SEO.
-- [x] Skills grouped per CV (Frontend, Mobile, E-commerce, SEO & Analytics,
-      Infrastructure, Tools & AI).
+- [x] Skills grouped per CV (Web Development, E-commerce & CMS, Mobile &
+      Backend Services, SEO/Analytics & Infrastructure, Tools & Delivery).
 - [x] Projects: AKIUAE, Esthica, Beatryx, Flavor & Figures, R3, Ceovia, Skinin,
       Prizmah, AmeerAli, TechSavvyHelp, MesoAge, Google Play apps.
 - [x] Contact: iamanwaralam48@gmail.com · +971 58 661 9341.

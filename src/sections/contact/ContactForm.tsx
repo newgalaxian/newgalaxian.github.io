@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { CheckCircle2, Loader2, Send, TriangleAlert } from 'lucide-react';
+import { CheckCircle2, Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { sendContactMessage, type ContactMessage } from '@/utils';
 
-type Status = 'idle' | 'sending' | 'success' | 'error';
+type Status = 'idle' | 'success';
 
 type Errors = Partial<Record<keyof ContactMessage, string>>;
 
@@ -31,9 +31,10 @@ const inputClasses =
   'w-full rounded-xl border border-border bg-card px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-primary/40 focus-visible:ring-2 focus-visible:ring-ring aria-[invalid=true]:border-destructive';
 
 /**
- * Validated contact form. Client-side validation with inline errors,
- * honeypot spam trap, and async submit through sendContactMessage
- * (endpoint-ready, mailto fallback).
+ * Validated contact form. Client-side validation with inline errors and a
+ * honeypot spam trap. Submitting opens the visitor's email client with a
+ * pre-filled message addressed directly to Anwar — no third-party form
+ * service, so nothing to misconfigure between local dev and production.
  */
 export function ContactForm() {
   const [values, setValues] = useState<ContactMessage>({
@@ -56,7 +57,7 @@ export function ContactForm() {
       setErrors((errs) => ({ ...errs, [field]: undefined }));
     };
 
-  const onSubmit = async (e: React.FormEvent) => {
+  const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (honeypot) return; // bot filled the hidden field — drop silently
 
@@ -64,14 +65,9 @@ export function ContactForm() {
     setErrors(nextErrors);
     if (Object.values(nextErrors).some(Boolean)) return;
 
-    setStatus('sending');
-    try {
-      await sendContactMessage(values);
-      setStatus('success');
-      setValues({ name: '', email: '', subject: '', message: '' });
-    } catch {
-      setStatus('error');
-    }
+    sendContactMessage(values);
+    setStatus('success');
+    setValues({ name: '', email: '', subject: '', message: '' });
   };
 
   return (
@@ -177,23 +173,9 @@ export function ContactForm() {
       </div>
 
       <div className="mt-2 flex flex-wrap items-center gap-4">
-        <Button
-          type="submit"
-          variant="gradient"
-          size="lg"
-          disabled={status === 'sending'}
-        >
-          {status === 'sending' ? (
-            <>
-              <Loader2 className="animate-spin" />
-              Sending…
-            </>
-          ) : (
-            <>
-              <Send />
-              Send message
-            </>
-          )}
+        <Button type="submit" variant="gradient" size="lg">
+          <Send />
+          Open email app
         </Button>
 
         {status === 'success' && (
@@ -202,16 +184,8 @@ export function ContactForm() {
             className="flex items-center gap-1.5 text-sm font-medium text-accent"
           >
             <CheckCircle2 className="size-4" />
-            Message sent — I&apos;ll get back to you soon.
-          </p>
-        )}
-        {status === 'error' && (
-          <p
-            role="alert"
-            className="flex items-center gap-1.5 text-sm font-medium text-destructive"
-          >
-            <TriangleAlert className="size-4" />
-            Something went wrong — email me directly instead.
+            Your email app should be open now — hit send to reach me
+            directly.
           </p>
         )}
       </div>

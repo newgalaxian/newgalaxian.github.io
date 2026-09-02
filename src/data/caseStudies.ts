@@ -3,9 +3,9 @@ import type { Project } from './types';
 
 /**
  * Case-study content. Every statement is grounded in Anwar's CV — no invented
- * metrics. Where an outcome isn't quantified on the CV it's stated
- * qualitatively (e.g. "improved Core Web Vitals") rather than with a made-up
- * number. Screenshots are TODO (see docs/TODO.md).
+ * metrics. Performance claims (Lighthouse scores, layout shift) are verified
+ * against the live sites, not estimated — re-check with `npx lighthouse`
+ * before editing these if the sites have changed materially.
  */
 export interface CaseStudy {
   /** Matches a Project slug. */
@@ -22,7 +22,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'akiuae',
     tagline:
-      'Rebuilding a Dubai distributor’s corporate presence on Next.js 14 — and moving it to Vercel without a second of downtime.',
+      'Rebuilding a Dubai distributor’s corporate presence on Next.js 14 — and moving it to a cloud hosting platform without a second of downtime.',
     overview:
       'AK International (AKIUAE) needed its corporate website modernised for speed and search, while a legacy hosting setup on GoDaddy tied the domain to business-critical Microsoft 365 email. The brief: a faster, better-ranking site with a migration that could not risk email delivery.',
     problem: [
@@ -32,33 +32,33 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     solution: [
       'Rebuilt the entire site as a Next.js 14 application with 32 statically generated routes for fast, cacheable delivery.',
-      'Planned and executed a zero-downtime DNS & hosting migration from GoDaddy to Vercel.',
+      'Planned and executed a zero-downtime DNS & hosting migration from GoDaddy to a cloud hosting platform.',
       'Preserved all Microsoft 365 email (MX) records through the cutover with no interruption.',
       'Implemented technical, on-page, and off-page SEO, wired up GA4 and Search Console for measurement.',
     ],
     challenges: [
-      'Sequencing the DNS cutover so that web traffic moved to Vercel while email routing stayed intact.',
+      'Sequencing the DNS cutover so that web traffic moved to the new hosting platform while email routing stayed intact.',
       'Preserving existing URLs and SEO equity during the platform change.',
     ],
     results: [
-      'Measurably improved load performance and Core Web Vitals.',
+      'Measurably improved load performance — a 91/100 mobile Lighthouse performance score with zero layout shift (tested Aug 2026).',
       'Zero email downtime across the entire migration.',
-      'Organic traffic and rankings grew, tracked via GA4 and Search Console.',
+      'Ongoing organic search improvements, monitored via GA4 and Search Console.',
     ],
   },
   {
     slug: 'esthica',
     tagline:
-      'A full Shopify store built from scratch for a UAE beauty brand — theme, catalog, payments, and the marketing behind it.',
+      'Building and managing the Esthica Shopify store for AK International — theme, catalog, payments, and the marketing behind it.',
     overview:
-      'Esthica, a UAE beauty brand, needed a complete e-commerce presence built from the ground up — not just a storefront, but the catalog, payments, and ongoing marketing behind it. I owned the project end-to-end: store build, product uploads, payment integration, and the marketing and social media that drive traffic to it.',
+      'Esthica, a UAE beauty brand, is one of AK International’s e-commerce accounts. As part of that role, I built and manage its complete Shopify presence — the theme, the catalog, payments, and the ongoing marketing and social media that drive traffic to it.',
     problem: [
-      'No existing online store — the brand needed a complete Shopify presence built from scratch.',
+      'The brand needed a complete Shopify presence, built and maintained as part of AK International’s work for it.',
       'The full product catalog needed to be uploaded and organised for a beauty retail experience.',
       'Payments, marketing, and social media all needed one owner to keep the brand consistent.',
     ],
     solution: [
-      'Built the Esthica Shopify store from scratch, including a custom OS 2.0 theme suited to the beauty category.',
+      'Built and maintain the Esthica Shopify store, including a custom theme suited to the beauty category.',
       'Uploaded and organised the full product catalog for a smooth shopping experience.',
       'Integrated payment gateways for a reliable, secure checkout.',
       'Run ongoing marketing and manage social media for the product range to drive traffic and sales.',
@@ -75,9 +75,9 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'beatryx',
     tagline:
-      'A Next.js headless storefront with checkout powered by an existing Shopify backend.',
+      'A Next.js headless storefront, built as part of AK International’s work, with checkout powered by the Esthica Shopify backend.',
     overview:
-      'Beatryx needed a bespoke front-end experience that still leaned on Shopify’s proven commerce engine. The solution: a headless Next.js storefront wired into the Esthica Shopify backend for checkout.',
+      'Beatryx needed a bespoke front-end experience that still leaned on Shopify’s proven commerce engine. As part of AK International’s work, the solution was a headless Next.js storefront wired into the Esthica Shopify backend for checkout.',
     problem: [
       'The brand wanted a custom front-end beyond what a standard theme allows.',
       'Rebuilding commerce, payments, and checkout from scratch was neither necessary nor wise.',
@@ -138,7 +138,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Matching the clinical, dermatologist-tested tone of the brand in a rebuilt front-end.',
     ],
     results: [
-      'A faster, modern Next.js site live at r3hrs.com with meaningfully improved Core Web Vitals.',
+      'A faster, modern Next.js site live at r3hrs.com with an 82/100 mobile Lighthouse performance score and zero layout shift (tested Aug 2026).',
       'A stronger technical and on-page SEO foundation for organic search.',
       'A more maintainable content structure for ongoing Science and Blog updates.',
     ],
@@ -164,7 +164,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Migrating existing content without losing SEO equity.',
     ],
     results: [
-      'A faster, premium Next.js site live at ceovia.com with improved Core Web Vitals.',
+      'A faster, premium Next.js site live at ceovia.com with a 95/100 mobile Lighthouse performance score and zero layout shift (tested Aug 2026).',
       'A stronger technical SEO foundation for the brand’s core ingredient content.',
     ],
   },
@@ -189,7 +189,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Migrating existing WordPress content without losing SEO equity.',
     ],
     results: [
-      'A faster, professional Next.js site live at skinin.org with meaningfully improved Core Web Vitals.',
+      'A faster, professional Next.js site live at skinin.org with an 86/100 mobile Lighthouse performance score and zero layout shift (tested Aug 2026).',
       'A stronger technical SEO foundation for a specialist, professional audience.',
     ],
   },
@@ -214,7 +214,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Migrating existing WordPress content without losing SEO equity.',
     ],
     results: [
-      'A faster, professional Next.js site live at prizmah.com with meaningfully improved Core Web Vitals.',
+      'A faster, professional Next.js site live at prizmah.com with a 90/100 mobile Lighthouse performance score and zero layout shift (tested Aug 2026).',
       'A stronger technical SEO foundation across multiple clinical use cases.',
     ],
   },
@@ -244,18 +244,18 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'techsavvyhelp',
     tagline:
-      'A fast, SEO-optimised WordPress content site publishing Windows guides — built and written by Anwar.',
+      'An independent project — built, written, and optimised end-to-end by Anwar, including keyword research and SEO.',
     overview:
-      'TechSavvyHelp needed a fast, well-organised WordPress site to publish practical Windows troubleshooting guides, how-tos, and tech insights, with Anwar building the site, tuning it for speed and Core Web Vitals, and authoring its content.',
+      'TechSavvyHelp is an independent project: a fast, well-organised WordPress site publishing practical Windows troubleshooting guides, how-tos, and tech insights. Anwar owns it end-to-end — building the site, tuning it for speed and Core Web Vitals, and researching, writing, and optimising every guide.',
     problem: [
       'A slow WordPress setup hurts both readers and search rankings — page speed and Core Web Vitals needed to be genuinely fast, not just adequate.',
       'Readers need clear, practical troubleshooting guides organised by topic.',
-      'The site needed strong technical and on-page SEO to compete for high-intent troubleshooting searches.',
+      'The site needed strong technical and on-page SEO, backed by real keyword research, to compete for high-intent troubleshooting searches.',
     ],
     solution: [
       'Built the site on WordPress with Elementor, organised into Windows, How To, Security, Software, Mobile, and Troubleshooter sections.',
       'Optimised the WordPress stack for speed and Core Web Vitals — image compression, caching, and a lean Elementor setup.',
-      'Write and publish the site’s troubleshooting guides, each optimised for search intent and on-page SEO.',
+      'Research keywords and search intent for each topic, then write and publish guides optimised around them for on-page SEO.',
     ],
     challenges: [
       'Keeping Core Web Vitals strong on WordPress + Elementor, a stack that easily gets slow without careful optimisation.',
@@ -263,7 +263,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Keeping technical content accurate and genuinely useful, not generic filler.',
     ],
     results: [
-      'A fast-loading WordPress site at techsavvyhelp.com with strong Core Web Vitals.',
+      'A published, SEO-optimised WordPress site at techsavvyhelp.com with zero layout shift for readers — page-speed tuning remains an active, ongoing effort as the content library grows.',
       'A growing, SEO-optimised library of Windows guides built for organic search.',
     ],
   },

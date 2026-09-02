@@ -16,6 +16,7 @@ function TodoTag() {
 /** "At a glance" fact panel beside the About story. */
 export function AtAGlance() {
   const current = EXPERIENCE.find((e) => e.current) ?? EXPERIENCE[0];
+  const hasPlaceholderLanguage = LANGUAGES.some((l) => l.placeholder);
   const languages = LANGUAGES.filter((l) => !l.placeholder)
     .map((l) => l.name)
     .join(', ');
@@ -40,7 +41,7 @@ export function AtAGlance() {
       icon: Languages,
       label: 'Languages',
       value: languages || '—',
-      todo: true,
+      todo: hasPlaceholderLanguage,
     },
     {
       icon: GraduationCap,

@@ -1,38 +1,48 @@
+import { PROJECTS } from './projects';
 import type { SocialLink, Stat } from './types';
+
+/** Web + e-commerce projects (excludes standalone mobile-app work). */
+const WEB_PROJECT_COUNT = PROJECTS.filter((p) => p.category !== 'Mobile').length;
 
 /**
  * Core personal brand. Verified against Anwar's official one-page CV
- * (public/resume/Anwar_Alam_CV_OnePage.pdf) — the authoritative source for
+ * (public/resume/Anwar_Alam_CV.pdf) — the authoritative source for
  * roles, experience, and bio.
  */
 export const PROFILE = {
   name: 'Anwar Alam',
   firstName: 'Anwar',
   location: 'Dubai, UAE',
-  /** Rotating roles used by the hero typing animation (from CV headline + skills). */
+  /**
+   * Rotating roles used by the hero typing animation. The first item is the
+   * main professional headline verbatim from the CV — it's what visitors see
+   * by default before the typewriter cycles. None of these lead with a
+   * specific framework/language name (Next.js, React, TypeScript stay in the
+   * Skills section and project descriptions instead).
+   */
   roles: [
-    'Full-Stack Web Developer',
-    'Next.js Developer',
-    'Shopify Developer',
-    'Flutter Developer',
+    'Full-Stack Web Developer | E-commerce & SEO',
+    'E-commerce Developer',
     'SEO Specialist',
+    'Shopify Developer',
+    'WordPress Developer',
   ],
+  /** Short role label for sentence contexts (alt text, schema, footer). */
   primaryRole: 'Full-Stack Web Developer',
   availability: ['Remote', 'Hybrid', 'Onsite', 'Freelance'],
   available: true,
-  yearsOfExperience: 8,
-  /** Short hero line (condensed from the CV profile). */
+  /** Short hero line (condensed from the CV profile — no exact duration). */
   tagline:
-    'Full-stack developer with 8+ years across web and mobile — building fast Next.js applications, custom Shopify storefronts, and headless commerce for UAE brands.',
-  /** Longer about paragraph (from the CV profile summary). */
-  bio: 'Full-stack developer with 8+ years across web and mobile, including 4 years in the UAE. I rebuild corporate sites as modern Next.js applications, ship custom Shopify OS 2.0 themes and headless storefronts, and drive the SEO and infrastructure work that keeps them fast and discoverable. Former Android/Flutter developer with published Google Play apps, and an early adopter of AI-assisted engineering with Claude Code and MCP.',
+    'Experienced full-stack web developer building reliable, high-performance websites, e-commerce platforms, and digital experiences for UAE businesses.',
+  /** Longer about paragraph — mirrors the CV's professional summary verbatim. */
+  bio: 'Experienced full-stack web developer with a background across web and mobile development and professional experience in Dubai. Specializes in building reliable, high-performance websites, e-commerce platforms and digital experiences for UAE businesses. Rebuilt a 32-route corporate platform and led a zero-downtime migration to a cloud hosting platform while preserving Microsoft 365 email services. Combines development expertise with technical SEO, analytics and web infrastructure management.',
 } as const;
 
-/** Headline stats — grounded in the CV, kept universally readable (no jargon). */
+/** Headline stats — grounded in the CV. No exact-duration figures. */
 export const STATS: Stat[] = [
-  { value: '8+', label: 'Years of Experience' },
-  { value: '4', label: 'Years in the UAE' },
+  { value: `${WEB_PROJECT_COUNT}`, label: 'Web Projects Shipped' },
   { value: '100%', label: 'Zero-Downtime Migration' },
+  { value: 'UAE', label: 'Dubai-Based Developer' },
 ];
 
 export const SOCIALS: SocialLink[] = [

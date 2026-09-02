@@ -8,12 +8,13 @@ import { RESUME_URL } from '@/data/navigation';
 import { useTypewriter } from '@/hooks';
 import { fadeUp, staggerContainer } from '@/animations/variants';
 import { HeroBackground } from './hero/HeroBackground';
-import { HeroPhoto } from './hero/HeroPhoto';
 
 /**
  * Hero — the first impression. Animated headline, typewriter role cycling,
- * availability badge, quick stats, three CTAs, socials, and the portrait,
- * over an animated background (blobs, particles, cursor parallax).
+ * availability badge, quick stats, three CTAs, and socials, centered over an
+ * animated background (blobs, particles, cursor parallax). No portrait —
+ * removed by request; layout is a single centered column rather than the
+ * former text/photo split.
  */
 export function Hero() {
   const role = useTypewriter(PROFILE.roles);
@@ -25,13 +26,12 @@ export function Hero() {
     >
       <HeroBackground />
 
-      <Container className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
-        {/* Text column */}
+      <Container className="flex flex-col items-center">
         <motion.div
           variants={staggerContainer(0.09)}
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-center text-center lg:items-start lg:text-left"
+          className="flex max-w-3xl flex-col items-center text-center"
         >
           <motion.div variants={fadeUp}>
             <span className="glass inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium">
@@ -58,13 +58,15 @@ export function Hero() {
             Hi, I&apos;m <span className="text-gradient">{PROFILE.name}</span>
           </motion.h1>
 
-          {/* Typewriter role */}
+          {/* Typewriter role — natural inline wrap (not a fixed-height flex
+              row) since the new headline phrase is long enough to wrap onto
+              multiple lines on narrow viewports; a fixed height clipped it. */}
           <motion.div
             variants={fadeUp}
-            className="mt-5 flex h-9 items-center gap-2 font-display text-2xl font-semibold sm:text-3xl"
+            className="mt-5 min-h-9 font-display text-2xl font-semibold text-balance sm:min-h-11 sm:text-3xl"
             aria-live="polite"
           >
-            <span className="text-muted-foreground">I&apos;m a</span>
+            <span className="text-muted-foreground">I&apos;m a </span>
             <span className="text-foreground">
               {role}
               <span className="ml-0.5 inline-block h-6 w-0.5 translate-y-0.5 bg-primary animate-caret sm:h-7" />
@@ -81,7 +83,7 @@ export function Hero() {
           {/* CTAs */}
           <motion.div
             variants={fadeUp}
-            className="mt-9 flex flex-wrap items-center justify-center gap-3 lg:justify-start"
+            className="mt-9 flex flex-wrap items-center justify-center gap-3"
           >
             <Button asChild size="lg" variant="gradient">
               <a href="#projects">
@@ -111,7 +113,7 @@ export function Hero() {
             className="mt-10 grid w-full max-w-md grid-cols-3 gap-4 border-t border-border pt-6"
           >
             {STATS.map((stat) => (
-              <div key={stat.label} className="text-center lg:text-left">
+              <div key={stat.label} className="text-center">
                 <dt className="sr-only">{stat.label}</dt>
                 <dd>
                   <span className="block font-display text-2xl font-bold text-gradient">
@@ -125,11 +127,6 @@ export function Hero() {
             ))}
           </motion.dl>
         </motion.div>
-
-        {/* Photo column */}
-        <div className="order-first lg:order-last">
-          <HeroPhoto />
-        </div>
       </Container>
 
       {/* Scroll cue */}

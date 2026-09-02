@@ -1,35 +1,34 @@
 # Anwar Alam
 
-> Full-Stack Web Developer based in Dubai, UAE — 8+ years across web and mobile, specializing in Next.js, Shopify, and WordPress-to-Next.js migrations.
+> Full-Stack Web Developer based in Dubai, UAE, specializing in e-commerce and SEO — Next.js, Shopify, and WordPress-to-Next.js migrations.
 
-Anwar Alam rebuilds corporate and product sites as fast, modern Next.js applications, ships custom Shopify OS 2.0 themes and headless storefronts, and drives the SEO and infrastructure work that keeps them discoverable. Currently Web Developer & SEO Specialist at AK International LLC (Dubai, UAE). Formerly an Android/Flutter developer with published Google Play apps. Core stack: Next.js, React, TypeScript, Tailwind CSS, Shopify, WordPress, Flutter, GA4, Vercel. Available for remote, hybrid, onsite, and freelance work.
+Anwar Alam rebuilds corporate and product sites as fast, modern Next.js applications, ships custom Shopify themes and headless storefronts, and drives the SEO and infrastructure work that keeps them discoverable. Currently Web Developer & SEO Specialist at AK International LLC (Dubai, UAE), where he also manages the Esthica e-commerce store on Shopify. Formerly an Android/Flutter developer with published Google Play apps. Core stack: Next.js, React, TypeScript, Tailwind CSS, Shopify, WordPress, Flutter, GA4, cloud hosting platforms. Available for remote, hybrid, onsite, and freelance work.
 
 ## Key Pages
 
 - [Home](https://iamanwaralam.github.io/): Full portfolio — about, skills, services, experience, testimonials, contact
 - [Projects](https://iamanwaralam.github.io/#projects): Filterable, searchable grid of all case studies
-- [Blog](https://iamanwaralam.github.io/blog): Articles on Next.js, Shopify, SEO, and AI-assisted development
-- [Resume (PDF)](https://iamanwaralam.github.io/resume/Anwar_Alam_CV_OnePage.pdf): One-page CV
+- [Resume (PDF)](https://iamanwaralam.github.io/resume/Anwar_Alam_CV.pdf): One-page CV
 - [Contact](https://iamanwaralam.github.io/#contact): Contact form, email, WhatsApp, LinkedIn, GitHub
 
 ## Case Studies
 
-- [AKIUAE Corporate Website](https://iamanwaralam.github.io/projects/akiuae): Rebuilt a Dubai distributor's corporate site as a Next.js 14 application with 32 statically generated routes, then led a zero-downtime DNS & hosting migration from GoDaddy to Vercel.
-- [Esthica — Shopify Store](https://iamanwaralam.github.io/projects/esthica): Built a Shopify store from scratch for a UAE beauty brand — theme, catalog, payment integration, and ongoing marketing/social media management.
-- [Beatryx — Headless Storefront](https://iamanwaralam.github.io/projects/beatryx): Next.js headless storefront with checkout integrated directly into an existing Shopify backend.
+- [AKIUAE Corporate Website](https://iamanwaralam.github.io/projects/akiuae): Rebuilt a Dubai distributor's corporate site as a Next.js 14 application with 32 statically generated routes, then led a zero-downtime DNS & hosting migration from GoDaddy to a cloud hosting platform.
+- [Esthica — Shopify Store](https://iamanwaralam.github.io/projects/esthica): Built and manages the Esthica Shopify store for AK International — theme, catalog, payment integration, and ongoing marketing/social media management.
+- [Beatryx — Headless Storefront](https://iamanwaralam.github.io/projects/beatryx): Next.js headless storefront built as part of AK International's work, with checkout integrated directly into the Esthica Shopify backend.
 - [Flavor & Figures](https://iamanwaralam.github.io/projects/flavor-and-figures): Next.js content platform for a Dubai food media channel, built for speed and SEO.
 - [R3 — Hair Revitalizing Spray](https://iamanwaralam.github.io/projects/r3hrs): Migrated a hair-recovery product site from WordPress to Next.js.
 - [Ceovia — Wellness System](https://iamanwaralam.github.io/projects/ceovia): Migrated a wellness supplement brand site from WordPress to Next.js.
 - [Skinin — Micro-Needling System](https://iamanwaralam.github.io/projects/skinin): Migrated a professional medical-device brand site from WordPress to Next.js.
 - [Prizmah — PRP System](https://iamanwaralam.github.io/projects/prizmah): Migrated a medical-device (PRP/PRF) brand site from WordPress to Next.js.
 - [AmeerAli — Luxury Gifting](https://iamanwaralam.github.io/projects/alameerali): Next.js e-commerce site for a luxury personalized gifting and corporate gifting brand, serving retail and wholesale buyers.
-- [TechSavvyHelp](https://iamanwaralam.github.io/projects/techsavvyhelp): WordPress site publishing Windows tips and troubleshooting guides — built and written by Anwar.
+- [TechSavvyHelp](https://iamanwaralam.github.io/projects/techsavvyhelp): Independent project — WordPress site publishing Windows tips and troubleshooting guides, with Anwar owning site build, keyword research, SEO, and content end-to-end.
 - [MesoAge — Mesotherapy Products](https://iamanwaralam.github.io/projects/mesoage): Next.js site for a professional aesthetic mesotherapy product line, for practitioners and clinics.
 - [Google Play Apps](https://iamanwaralam.github.io/projects/google-play-apps): Published Android apps (Java, Flutter) on Google Play, including legacy Java-to-Flutter migrations on Firebase.
 
 ## Services
 
-Website Development, Shopify Development, WordPress Development, SEO, Website Speed Optimization, AI Automation, E-commerce Solutions, Digital Marketing, IT Support, UI/UX Design.
+Website Development, WordPress Development, Shopify Development, SEO (including Google Business Profile setup and optimization), Website Speed Optimization.
 
 ## Contact
 

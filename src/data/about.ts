@@ -1,12 +1,12 @@
 /**
  * About-section content. Verified against Anwar's official CV
- * (public/resume/Anwar_Alam_CV_OnePage.pdf). Education, languages, and
+ * (public/resume/Anwar_Alam_CV.pdf). Education, languages, and
  * highlights are now real — no placeholders.
  */
 
 export const ABOUT_STORY: string[] = [
-  'I’m a full-stack developer with 8+ years across web and mobile, including the last 4 years based in Dubai, UAE. My focus today is building fast, modern web applications with Next.js and shipping e-commerce experiences that convert.',
-  'At AK International I rebuilt the company’s corporate site as a Next.js 14 application with 32 statically generated routes, then led a zero-downtime hosting migration — preserving Microsoft 365 email with no interruption. I also build and maintain many of the business’s other product pages and websites in WordPress, and drive the SEO, digital marketing, analytics, and infrastructure that keep everything performing securely. Alongside that I ship custom Shopify OS 2.0 themes and headless storefronts for UAE brands.',
+  'Experienced full-stack web developer with a background across web and mobile development and professional experience in Dubai. Specializes in building reliable, high-performance websites, e-commerce platforms and digital experiences for UAE businesses. Rebuilt a 32-route corporate platform and led a zero-downtime migration to a cloud hosting platform while preserving Microsoft 365 email services. Combines development expertise with technical SEO, analytics and web infrastructure management.',
+  'At AK International, I build and maintain corporate websites, product pages, and web applications using Next.js, WordPress, and React Native. I manage the Esthica e-commerce store on Shopify — theme updates, product catalog maintenance, and payment-gateway support — and handle technical, on-page, and off-page SEO — including Google Business Profile setup and optimization — with performance tracked through GA4 and Google Search Console. I also administer Microsoft 365, Google Workspace, cPanel, domains, DNS, SSL, hosting, backups, security, and disaster-recovery readiness.',
   'Before the web, I spent years as an Android and Flutter developer with published Google Play apps. That mobile background — plus an early move into AI-assisted engineering with Claude Code and MCP — shapes how I build: pragmatic, measurable, and fast.',
 ];
 
@@ -20,27 +20,27 @@ export interface Highlight {
 export const HIGHLIGHTS: Highlight[] = [
   {
     icon: 'Code2',
-    title: 'Next.js Full-Stack',
+    title: 'Full-Stack Web Development',
     description:
-      'Modern, statically generated Next.js apps with strong Core Web Vitals.',
+      'Reliable, high-performance websites and web applications built with Next.js and React.',
   },
   {
     icon: 'ShoppingBag',
-    title: 'Shopify & Headless Commerce',
+    title: 'E-commerce & Shopify',
     description:
-      'Custom Shopify OS 2.0 themes and Next.js headless storefronts for UAE brands.',
+      'Custom Shopify themes and Next.js headless storefronts for UAE brands.',
   },
   {
     icon: 'TrendingUp',
     title: 'SEO & Analytics',
     description:
-      'Technical, on-page & off-page SEO tracked with GA4 and Search Console.',
+      'Technical, on-page & off-page SEO, including Google Business Profile, tracked with GA4 and Search Console.',
   },
   {
     icon: 'Sparkles',
     title: 'AI-Assisted Engineering',
     description:
-      'Early adopter of Claude Code and MCP connectors (GitHub, Figma, Vercel).',
+      'Early adopter of Claude Code and MCP connectors for GitHub, Figma, and deployment tools.',
   },
 ];
 

@@ -210,7 +210,7 @@ export function BlogPage() {
               </h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 I&apos;m writing about rebuilding akiuae.com with Next.js 14,
-                zero-downtime hosting migrations, Shopify OS 2.0 theming, and
+                zero-downtime hosting migrations, Shopify theming, and
                 AI-assisted development with Claude Code. Follow along to catch
                 the first posts.
               </p>

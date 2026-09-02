@@ -33,12 +33,11 @@ export interface Skill {
 }
 
 export type SkillCategory =
-  | 'Frontend'
-  | 'Mobile'
-  | 'E-commerce'
-  | 'SEO & Analytics'
-  | 'Infrastructure'
-  | 'Tools & AI';
+  | 'Web Development'
+  | 'E-commerce & CMS'
+  | 'Mobile & Backend Services'
+  | 'SEO, Analytics & Infrastructure'
+  | 'Tools & Delivery';
 
 export interface Project {
   slug: string;

@@ -5,6 +5,7 @@ import {
   SiTypescript,
   SiJavascript,
   SiHtml5,
+  SiCss,
   SiTailwindcss,
   SiFlutter,
   SiDart,
@@ -16,7 +17,6 @@ import {
   SiGoogleanalytics,
   SiGooglesearchconsole,
   SiGoogletagmanager,
-  SiVercel,
   SiCpanel,
   SiGit,
   SiGithub,
@@ -35,46 +35,49 @@ interface TechDef {
 
 // name (from src/data/skills.ts) → brand icon + color, or a lettered fallback.
 const TECH: Record<string, TechDef> = {
-  // Frontend
-  'Next.js 14': { Icon: SiNextdotjs },
+  // Web Development
+  'Next.js': { Icon: SiNextdotjs },
   React: { Icon: SiReact, color: '#61DAFB' },
   TypeScript: { Icon: SiTypescript, color: '#3178C6' },
   JavaScript: { Icon: SiJavascript, color: '#F7DF1E' },
   'Tailwind CSS': { Icon: SiTailwindcss, color: '#06B6D4' },
-  'HTML5 & CSS3': { Icon: SiHtml5, color: '#E34F26' },
+  HTML5: { Icon: SiHtml5, color: '#E34F26' },
+  CSS3: { Icon: SiCss, color: '#663399' },
 
-  // Mobile
-  Flutter: { Icon: SiFlutter, color: '#02569B' },
-  Dart: { Icon: SiDart, color: '#0175C2' },
-  'Android (Java)': { Icon: SiAndroid, color: '#3DDC84' },
-  Firebase: { Icon: SiFirebase, color: '#FFCA28' },
-
-  // E-commerce
-  'Shopify OS 2.0': { Icon: SiShopify, color: '#7AB55C' },
+  // E-commerce & CMS
+  Shopify: { Icon: SiShopify, color: '#7AB55C' },
   Liquid: { fallback: 'Lq' },
   WordPress: { Icon: SiWordpress },
   WooCommerce: { Icon: SiWoocommerce, color: '#96588A' },
+  'Headless Commerce': { fallback: 'HC' },
 
-  // SEO & Analytics
+  // Mobile & Backend Services
+  Flutter: { Icon: SiFlutter, color: '#02569B' },
+  Dart: { Icon: SiDart, color: '#0175C2' },
+  'Android (Java)': { Icon: SiAndroid, color: '#3DDC84' },
+  'Firebase Realtime Database': { Icon: SiFirebase, color: '#FFCA28' },
+  Authentication: { fallback: 'Au' },
+  Analytics: { fallback: 'An' },
+
+  // SEO, Analytics & Infrastructure
   'Technical SEO': { fallback: 'SEO' },
   GA4: { Icon: SiGoogleanalytics, color: '#E37400' },
   'Search Console': { Icon: SiGooglesearchconsole, color: '#458CF5' },
   'Tag Manager': { Icon: SiGoogletagmanager, color: '#246FDB' },
-
-  // Infrastructure
-  Vercel: { Icon: SiVercel },
+  'Google Business Profile': { fallback: 'GBP' },
+  'Web Hosting': { fallback: 'Web' },
   DNS: { fallback: 'DNS' },
   cPanel: { Icon: SiCpanel, color: '#FF6C2C' },
   'Microsoft 365': { fallback: '365' },
   SSL: { fallback: 'SSL' },
 
-  // Tools & AI
+  // Tools & Delivery
   Git: { Icon: SiGit, color: '#F05032' },
   GitHub: { Icon: SiGithub },
+  'CI/CD': { fallback: 'CI' },
   Gradle: { Icon: SiGradle, color: '#02303A' },
   'Claude Code': { Icon: SiClaude, color: '#D97757' },
   MCP: { fallback: 'MCP' },
-  'CI/CD': { fallback: 'CI' },
 };
 
 interface TechIconProps {
